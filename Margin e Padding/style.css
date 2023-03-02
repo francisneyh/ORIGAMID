@@ -1,0 +1,75 @@
+.um_valor_padding {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 100px;
+    /* um valor adiciona o mesmo valor (100px) para todos os lados */
+}
+
+.dois_valores_padding {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 30px;
+    /* um valor adiciona o mesmo valor (30px) para todos os lados */
+    padding: 20px 40px;
+    /* dois valores juntos declarados de forma simplificada na ordem: TOP/BOTTOM      RIGHT/LEFT */
+}
+
+
+.quatro_valores_padding {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 30px;
+    /* um valor adiciona o mesmo valor (30px) para todos os lados */
+    /* quatro valores declarados de forma simplificada na ordem: TOP RIGHT BOTTOM LEFT */
+    padding: 40px 100px 200px 10px;
+
+    /* quatro valores desclarados de forma extensa na ordem: TOP RIGHT BOTTOM LEFT */
+    padding-top: 40px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    padding-left: 10px;
+}
+
+.um_valor_margin {
+    display: inline-block;
+    background-color: #df1;
+    margin: 100px;
+    /* um valor adiciona o mesmo valor (100px) para todos os lados */
+}
+
+.dois_valores_margin {
+    display: inline-block;
+    background-color: #df1;
+    margin: 100px 80px;
+    /* dois valores juntos declarados de forma simplificada na ordem: TOP/BOTTOM      RIGHT/LEFT */
+}
+
+.quatro_valores_margin {
+    display: inline-block;
+    background-color: #df1;
+    /* quatro valores declarados de forma simplificada na ordem: TOP RIGHT BOTTOM LEFT */
+    margin: 40px 60px 50px 10px;
+
+    /* quatro valores desclarados de forma extensa na ordem: TOP RIGHT BOTTOM LEFT  */
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-bottom: 55px;
+    margin-left: 200px; 
+}
+
+.valor_border_top {
+    display: inline-block;
+    padding: 50px;
+    background: pink;
+    border: 10px solid black;
+    border-top: 20px solid blue;    
+}
+
+.valor_border_width {
+    display: inline-block;
+    padding: 50px;
+    background: pink;
+    border: 10px solid black;
+    /* Adiciona bordas com tamanhos diferentes (como no padding / margin) */
+    border-width: 20px 40px;    
+}

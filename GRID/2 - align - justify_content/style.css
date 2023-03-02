@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.comprar {
+    background: #a8f;
+    color: #103;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: grid; /* faz o elemento ser grid e não ser mais inline, ou seja não precisa usar o display: inline block para fazer o elemento ser inline-block */
+}
+
+.item {
+    background: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 20px;
+    display: grid; /* faz o elemento ser grid e não ser mais inline, ou precisar usar o display: inline block para fazer o elemento ser inline-block */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px; /* faz colunas no grid, recomendavel usar o fr ( unidade fraccionaria que distribui o espaço que sobra entre os elementos, cada fr é uma coluna) por ser valor mais exato e dividir em pedaçados iguais não quebra o layout diferente da porcentagem, e diferente do px que por sua vez coloca um tamanho fixo na coluna*/
+    gap: 20px; /* separa margens no grid, logo não precisa usar o margin para adicionar margem no grid */
+    justify-content: center; /* muda/justifica a posição dos elementos (start, center, end) na tela */
+}
