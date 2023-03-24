@@ -29,6 +29,6 @@ h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* faz colunas no grid, recomendavel usar o fr ( unidade fraccionaria que distribui o espaço que sobra entre os elementos, cada fr é uma coluna) por ser valor mais exato e dividir em pedaçados iguais não quebra o layout diferente da porcentagem, e diferente do px que por sua vez coloca um tamanho fixo na coluna*/
+    grid-template-columns: 1fr 1fr; /* faz colunas no grid, recomendavel usar o fr (unidade fraccionaria que distribui o espaço que sobra entre os elementos, cada fr é uma coluna) por ser valor mais exato e dividir em pedaços iguais não quebra o layout diferente da porcentagem, e diferente do px que por sua vez coloca um tamanho fixo na coluna */
     gap: 20px; /* separa margens no grid, logo não precisa usar o margin para adicionar margem no grid */
 }

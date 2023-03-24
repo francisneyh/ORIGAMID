@@ -1,0 +1,74 @@
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr; /* define a quantidade de colunas que o grid vai utilizar */
+   /* align-items: center; /* para alinhar os itens precisa ser no grid, e os elementos alinhados. No caso o elemento maior que define o alinhamento centralizado, pois ele não tem espaço sobrando para alinhar */
+    /* place-items: start end; */
+    /* justify-items: end; */
+
+}
+
+.titulo {
+    grid-column: 2;
+    text-align: right; /* alinha somente o texto (a caixa que envolve o elemento), exemplo h1 */
+}
+
+.preco {
+    place-self: start end; /* alinha só o elemento especifico, no caso a classe preco que tem o conteúdo R$ 39,00, isso diminui a caixa do elemento */
+}
+
+.comprar {
+    align-self: start; /* alinha o botão comprar ao topo, isso diminui a caixa do elemento */
+    text-align: center;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+
+h1, p {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1; /* altura de linha com 1 vai diminuir o espaçamento entre a linha caso a palavra Stark fique embaixo do h1 */
+}
+
+p, span {
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.comprar {
+    background: #a8f;
+    color: #103;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.grid {
+    display: grid;
+}
+
+.preco {
+    background: #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* 
+    align-items = alinha os elementos/items horizontalmente
+    justify-items = alinha os elementos/items verticalmente
+    place-items = combinação do align-items com o justify-items 
+    place-items: start end;
+*/
+ 
