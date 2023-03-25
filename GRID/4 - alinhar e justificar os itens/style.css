@@ -17,6 +17,10 @@
     place-self: start end; /* alinha só o elemento especifico, no caso a classe preco que tem o conteúdo R$ 39,00, isso diminui a caixa do elemento */
 }
 
+.descricao {
+    text-align: right;
+}
+
 .comprar {
     align-self: start; /* alinha o botão comprar ao topo, isso diminui a caixa do elemento */
     text-align: center;

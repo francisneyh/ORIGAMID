@@ -1,0 +1,87 @@
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* repete 2 vezes o 1fr */
+    /* grid-template-columns: 1fr 1fr; define a quantidade de colunas que o grid vai utilizar */
+    /* grid-template-rows: 300px auto; cria linhas novas, ou seja aumenta o tamanho das linhas. Por padrão as linhas são criadas como auto, logo estamos mudando manualmente para 300px a primeira linha */
+    /* grid-template-rows: repeat(4, 200px); */
+    /* grid-auto-rows: 200px; as próximas linhas criadas tem 200px de tamanho */
+    /* grid-template-rows: repeat(3, auto), 1fr; */
+    /* place-items: start; para os itens/elementos não ocuparem todo o espaçamento e ficarem no começo */
+}
+.titulo {
+    grid-column: 1 / -1;
+}
+
+.info {
+    display: grid;
+    place-self: start;
+    place-items: start;
+    gap: 20px;
+}
+
+/* .foto {
+    grid-column: 1;
+    grid-row: 2 / 5; aumentando as linhas consegue-se manipular os elementos
+} */
+
+/* .comprar {
+    grid-column: 2;
+}  */
+
+/* .preco {
+    grid-column: 2; define que o preço vai ficar na 2 coluna
+    grid-row: 2; define que o preço vai ficar na 2 linha
+    grid-area: 2 / 2; define que o preço vai ficar na 2 coluna e na 2 linha. Logo faz a mesma coisa que o grid-column e o grid-row
+}  */
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+
+h1, p {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1; /* altura de linha com 1 vai diminuir o espaçamento entre a linha caso a palavra Stark fique embaixo do h1 */
+}
+
+p, span {
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.comprar {
+    background: #a8f;
+    color: #103;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.grid {
+    display: grid;
+}
+
+.preco {
+    background: #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* 
+    align-items = alinha os elementos/items horizontalmente
+    justify-items = alinha os elementos/items verticalmente
+    place-items = combinação do align-items com o justify-items 
+    place-items: start end;
+*/
+ 
